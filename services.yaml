@@ -1,0 +1,760 @@
+---
+- id: acm
+  name: AWS Certificate Manager
+  short_name: ACM
+
+- id: adot
+  name: AWS Distro for OpenTelemetry
+  short_name: ADOT
+
+- id: alexa
+  name: Alexa for Business
+
+- id: amg
+  name: Amazon Managed Grafana
+  short_name: AMG
+
+- id: amp
+  name: Amazon Managed Service for Prometheus
+  short_name: AMP
+
+- id: amplify
+  name: AWS Amplify
+
+- id: apache-mxnet-on-aws
+  name: Apache MXNet on AWS
+
+- id: api-gateway
+  name: Amazon API Gateway
+
+- id: app-mesh
+  name: AWS App Mesh
+
+- id: app-runner
+  name: AWS App Runner
+
+- id: appconfig
+  name: AWS AppConfig
+
+- id: appflow
+  name: Amazon AppFlow
+
+- id: application-discovery-service
+  name: AWS Application Discovery Service
+
+- id: appstream
+  name: Amazon AppStream 2.0
+
+- id: appsync
+  name: AWS AppSync
+
+- id: artifact
+  name: AWS Artifact
+
+- id: athena
+  name: Amazon Athena
+
+- id: audit-manager
+  name: AWS Audit Manager
+
+- id: augmented-ai
+  name: Amazon Augmented AI
+  short_name: Amazon A2I
+
+- id: aurora
+  name: Amazon Aurora
+
+- id: auto-scaling
+  name: Auto Scaling
+
+- id: backint-agent
+  name: AWS Backint Agent
+
+- id: backup
+  name: AWS Backup
+
+- id: batch
+  name: AWS Batch
+
+- id: blockchain
+  name: Amazon Managed Blockchain
+
+- id: bottlerocket
+  name: Bottlerocket
+
+- id: braket
+  name: Amazon Braket
+
+- id: cdk
+  name: AWS Cloud Development Kit
+  short_name: AWS CDK
+
+- id: chatbot
+  name: AWS Chatbot
+
+- id: chime-sdk
+  name: Amazon Chime SDK
+
+- id: chime-voice-connectors
+  name: Amazon Chime Voice Connectors
+
+- id: chime
+  name: Amazon Chime
+
+- id: client-vpn
+  name: AWS Client VPN
+
+- id: cloud-directory
+  name: Amazon Cloud Directory
+
+- id: cloud-map
+  name: AWS Cloud Map
+
+- id: cloud-wan
+  name: AWS Cloud WAN
+
+- id: cloud9
+  name: AWS Cloud9
+
+- id: cloudformation
+  name: AWS CloudFormation
+
+- id: cloudfront
+  name: Amazon CloudFront
+
+- id: cloudhsm
+  name: AWS CloudHSM
+
+- id: cloudsearch
+  name: Amazon CloudSearch
+
+- id: cloudtrail
+  name: AWS CloudTrail
+
+- id: cloudwatch
+  name: Amazon CloudWatch
+
+- id: codeartifact
+  name: AWS CodeArtifact
+
+- id: codebuild
+  name: AWS CodeBuild
+
+- id: codecommit
+  name: AWS CodeCommit
+
+- id: codedeploy
+  name: AWS CodeDeploy
+
+- id: codeguru
+  name: Amazon CodeGuru
+
+- id: codepipeline
+  name: AWS CodePipeline
+
+- id: codestar
+  name: AWS CodeStar
+
+- id: cognito
+  name: Amazon Cognito
+
+- id: comprehend-medical
+  name: Amazon Comprehend Medical
+
+- id: comprehend
+  name: Amazon Comprehend
+
+- id: config
+  name: AWS Config
+
+- id: connect
+  name: Amazon Connect
+
+- id: control-tower
+  name: AWS Control Tower
+
+- id: data-exchange
+  name: AWS Data Exchange
+
+- id: data-pipeline
+  name: AWS Data Pipeline
+
+- id: datasync
+  name: AWS DataSync
+
+- id: deepcomposer
+  name: AWS DeepComposer
+
+- id: deeplens
+  name: AWS DeepLens
+
+- id: deepracer
+  name: AWS DeepRacer
+
+- id: detective
+  name: Amazon Detective
+
+- id: device-farm
+  name: AWS Device Farm
+
+- id: devops-guru
+  name: Amazon DevOps Guru
+
+- id: direct-connect
+  name: AWS Direct Connect
+
+- id: directory-service
+  name: AWS Directory Service
+
+- id: dms
+  name: AWS Database Migration Service
+  short_name: AWS DMS
+
+- id: documentdb
+  name: Amazon DocumentDB
+
+- id: dynamodb
+  name: Amazon DynamoDB
+
+- id: ebs
+  name: Amazon Elastic Block Store
+  short_name: Amazon EBS
+
+- id: ec2-auto-scaling
+  name: Amazon EC2 Auto Scaling
+
+- id: ec2-image-builder
+  name: EC2 Image Builder
+
+- id: ec2
+  name: Amazon Elastic Compute Cloud
+  short_name: Amazon EC2
+
+- id: ecr
+  name: Amazon Elastic Container Registry
+  short_name: Amazon ECR
+
+- id: ecs-anywhere
+  name: Amazon ECS Anywhere
+
+- id: ecs
+  name: Amazon Elastic Container Service
+  short_name: Amazon ECS
+
+- id: efs
+  name: Amazon Elastic File System
+  short_name: Amazon EFS
+
+- id: eks-anywhere
+  name: Amazon EKS Anywhere
+  extra_search_terms:
+    - kubernetes
+
+- id: eks
+  name: Amazon Elastic Kubernetes Service
+  short_name: Amazon EKS
+  extra_search_terms:
+    - kubernetes
+
+- id: elastic-beanstalk
+  name: AWS Elastic Beanstalk
+
+- id: elastic-fabric-adapter
+  name: Elastic Fabric Adapter
+  short_name: EFA
+
+- id: elastic-transcoder
+  name: Amazon Elastic Transcoder
+
+- id: elasticache
+  name: Amazon ElastiCache
+
+- id: elb
+  name: Elastic Load Balancing
+  short_name: ELB
+
+- id: elemental-appliances-and-software
+  name: AWS Elemental Appliances and Software
+
+- id: elemental-conductor
+  name: AWS Elemental Conductor
+
+- id: elemental-delta
+  name: AWS Elemental Delta
+
+- id: elemental-link
+  name: AWS Elemental Link
+
+- id: elemental-mediaconnect
+  name: AWS Elemental MediaConnect
+
+- id: elemental-mediaconvert
+  name: AWS Elemental MediaConVert
+
+- id: elemental-medialive
+  name: AWS Elemental MediaLive
+
+- id: elemental-mediapackage
+  name: AWS Elemental MediaPackage
+
+- id: elemental-mediastore
+  name: AWS Elemental MediaStore
+
+- id: elemental-mediatailor
+  name: AWS Elemental MediaTailor
+
+- id: elemental-server
+  name: AWS Elemental Server
+
+- id: emr
+  name: Amazon EMR
+
+- id: eventbridge
+  name: Amazon EventBridge
+
+- id: fargate
+  name: AWS Fargate
+
+- id: finspace
+  name: Amazon FinSpace
+
+- id: firewall-manager
+  name: AWS Firewall Manager
+
+- id: fis
+  name: AWS Fault Injection Simulator
+  short_name: AWS FIS
+
+- id: forecast
+  name: Amazon Forecast
+
+- id: fraud-detector
+  name: Amazon Fraud Detector
+
+- id: freertos
+  name: Amazon FreeRTOS
+
+- id: fsx-for-lustre
+  name: Amazon FSx for Lustre
+
+- id: fsx-for-netapp-ontap
+  name: Amazon FSx for NetApp ONTAP
+
+- id: fsx-for-openzfs
+  name: Amazon FSx for OpenZFS
+
+- id: fsx-for-wfs
+  name: Amazon FSx for Windows File Server
+
+- id: fsx
+  name: Amazon FSx
+
+- id: gamekit
+  name: AWS GameKit
+
+- id: gamelift
+  name: AWS GameLift
+
+- id: gamesparks
+  name: Amazon GameSparks
+
+- id: global-accelerator
+  name: AWS Global Accelerator
+
+- id: glue-databrew
+  name: AWS Glue DataBrew
+
+- id: glue-elastic-views
+  name: AWS Glue Elastic Views
+
+- id: glue
+  name: AWS Glue
+
+- id: ground-station
+  name: AWS Ground Station
+
+- id: guardduty
+  name: Amazon GuardDuty
+
+- id: healthlake
+  name: Amazon HealthLake
+
+- id: honeycode
+  name: Amazon Honeycode
+
+- id: iam
+  name: AWS Identity and Access Management
+  short_name: AWS IAM
+
+- id: inspector
+  name: Amazon Inspector
+
+- id: iot-1-click
+  name: AWS IoT 1-Click
+
+- id: iot-analytics
+  name: AWS IoT Analytics
+
+- id: iot-button
+  name: AWS IoT Button
+
+- id: iot-core
+  name: AWS IoT Core
+
+- id: iot-device-defender
+  name: AWS IoT Device Defender
+
+- id: iot-device-management
+  name: AWS IoT Device Management
+
+- id: iot-events
+  name: AWS IoT Events
+
+- id: iot-expresslink
+  name: AWS IoT ExpressLink
+
+- id: iot-fleetwise
+  name: AWS IoT FleetWise
+
+- id: iot-greengrass
+  name: AWS IoT Device Management
+
+- id: iot-roborunner
+  name: AWS IoT RoboRunner
+
+- id: iot-sitewise
+  name: AWS IoT SiteWise
+
+- id: iot-things-graph
+  name: AWS IoT Things Graph
+
+- id: iot-twinmaker
+  name: AWS IoT TwinMaker
+
+- id: ivs
+  name: Amazon Interactive Video Service
+  short_name: Amazon IVS
+
+- id: kendra
+  name: Amazon Kendra
+
+- id: keyspaces
+  name: Amazon Keyspaces (for Apache Cassandra)
+
+- id: kinesis-data-analytics
+  name: Amazon Kinesis Data Analytics
+
+- id: kinesis-data-streams
+  name: Amazon Kinesis Data Streams
+
+- id: kinesis-data-firehose
+  name: Amazon Kinesis Data Firehose
+
+- id: kinesis-video-streams
+  name: Amazon Kinesis Video Streams
+
+- id: kinesis
+  name: Amazon Kinesis
+
+- id: kms
+  name: AWS Key Management Service
+  short_name: AWS KMS
+
+- id: lake-formation
+  name: AWS Lake Formation
+
+- id: lambda
+  name: AWS Lambda
+
+- id: lex
+  name: Amazon Lex
+
+- id: lightsail
+  name: AWS Lightsail
+
+- id: local-zones
+  name: AWS Local Zones
+
+- id: location-service
+  name: Amazon Location Service
+
+- id: lookout-for-equipment
+  name: Amazon Lookout for Equipment
+
+- id: lookout-for-metrics
+  name: Amazon Lookout for Metrics
+
+- id: lookout-for-vision
+  name: Amazon Lookout for Vision
+
+- id: lumberyard
+  name: Amazon Lumberyard
+
+- id: macie
+  name: Amazon Macie
+
+- id: mainframe-modernization
+  name: AWS Mainframe Modernization
+
+- id: memorydb-for-redis
+  name: Amazon MemoryDB for Redis
+
+- id: mgn
+  name: AWS Application Migration Service
+  short_name: AWS MGN
+
+- id: migration-evaluator
+  name: Migration Evaluator
+
+- id: migration-hub
+  name: AWS Migration Hub
+
+- id: monitron
+  name: Amazon Monitron
+
+- id: mq
+  name: Amazon MQ
+
+- id: msk
+  name: Amazon Managed Streaming for Apache Kafka
+  short_name: Amazon MSK
+
+- id: mwaa
+  name: Amazon Managed Workflows for Apache Airflow
+  short_name: Amazon MWAA
+
+- id: neptune
+  name: Amazon Neptune
+
+- id: network-firewall
+  name: AWS Network Firewall
+
+- id: neuron
+  name: AWS Neuron
+
+- id: nice-dcv
+  name: NICE DCV
+
+- id: nice-enginframe
+  name: NICE EnginFrame
+
+- id: nimble-studio
+  name: Amazon Nimble Studio
+
+- id: nitro-enclaves
+  name: AWS Nitro Enclaves
+
+- id: opensearch
+  name: Amazon OpenSearch Service
+  extra_search_terms:
+    - elasticsearch
+
+- id: opsworks
+  name: AWS OpsWorks
+
+- id: organizations
+  name: AWS Organizations
+
+- id: outposts
+  name: AWS Outposts
+
+- id: outposts-rack
+  name: AWS Outposts rack
+
+- id: outposts-servers
+  name: AWS Outposts servers
+
+- id: panorama
+  name: AWS Panorama
+
+- id: parallelcluster
+  name: AWS ParallelCluster
+
+- id: personal-health-dashboard
+  name: AWS Personal Health Dashboard
+
+- id: personalize
+  name: Amazon Personalize
+
+- id: pinpoint
+  name: Amazon Pinpoint
+
+- id: polly
+  name: Amazon Polly
+
+- id: private-5g
+  name: AWS Private 5G
+
+- id: privatelink
+  name: AWS PrivateLink
+
+- id: proton
+  name: AWS Proton
+
+- id: qldb
+  name: Amazon Quantum Ledger Database
+  short_name: Amazon QLDB
+
+- id: quicksight
+  name: Amazon QuickSight
+
+- id: rds-on-vmware
+  name: Amazon RDS for VMware
+
+- id: rds
+  name: Amazon RDS
+
+- id: redshift
+  name: Amazon Redshift
+
+- id: rekognition
+  name: Amazon Rekognition
+
+- id: resilience-hub
+  name: AWS Resilience Hub
+
+- id: resource-access-manager
+  name: AWS Resource Access Manager
+  short_name: AWS RAM
+
+- id: robomaker
+  name: AWS RoboMaker
+
+- id: rosa
+  name: Red Hat OpenShift Service on AWS
+  short_name: ROSA
+
+- id: route-53
+  name: Amazon Route 53
+
+- id: s3-glacier
+  name: Amazon S3 Glacier
+
+- id: s3-on-outposts
+  name: Amazon S3 on Outposts
+
+- id: s3
+  name: Amazon S3
+
+- id: sagemaker-ground-truth
+  name: Amazon SageMaker Ground Truth
+
+- id: sagemaker-studio-lab
+  name: Amazon SageMaker Studio Lab
+
+- id: sagemaker
+  name: Amazon SageMaker
+
+- id: secrets-manager
+  name: AWS Secrets Manager
+
+- id: security-hub
+  name: AWS Security Hub
+
+- id: serverless-application-repository
+  name: AWS Serverless Application Repository
+
+- id: service-catalog
+  name: AWS Service Catalog
+
+- id: ses
+  name: Amazon Simple Email Service
+  short_name: Amazon SES
+
+- id: shield
+  name: AWS Shield
+
+- id: signer
+  name: AWS Signer
+
+- id: site-to-site-vpn
+  name: AWS Site-to-Site VPN
+
+- id: sms
+  name: AWS Server Migration Service
+  short_name: AWS SMS
+
+- id: snowball-edge
+  name: AWS Snowball Edge
+
+- id: snowball
+  name: AWS Snowball
+
+- id: snowcone
+  name: AWS Snowcone
+
+- id: snowmobile
+  name: AWS Snowmobile
+
+- id: sns
+  name: Amazon Simple Notification Service
+  short_name: Amazon SNS
+
+- id: sqs
+  name: Amazon Simple Queue Service
+  short_name: Amazon SQS
+
+- id: systems-manager
+  name: AWS Systems Manager
+
+- id: sso
+  name: AWS Single Sign-On
+  short_name: AWS SSO
+
+- id: step-functions
+  name: AWS Step Functions
+
+- id: storage-gateway
+  name: AWS Storage Gateway
+
+- id: sumerian
+  name: Amazon Sumerian
+
+- id: textract
+  name: Amazon Textract
+
+- id: timestream
+  name: Amazon Timestream
+
+- id: torchserve
+  name: TorchServe
+
+- id: transcribe
+  name: Amazon Transcribe
+
+- id: transfer-family
+  name: AWS Transfer Family
+
+- id: transit-gateway
+  name: AWS Transit Gateway
+
+- id: translate
+  name: Amazon Translate
+
+- id: vmware-cloud-on-aws
+  name: VMware Cloud on AWS
+
+- id: vpc
+  name: Amazon Virtual Private Cloud
+  short_name: Amazon VPC
+
+- id: waf
+  name: AWS WAF
+
+- id: wavelength
+  name: AWS Wavelength
+
+- id: workdocs
+  name: Amazon WorkDocs
+
+- id: worklink
+  name: Amazon WorkLink
+
+- id: workmail
+  name: Amazon WorkMail
+
+- id: workspaces
+  name: Amazon WorkSpaces
+
+- id: x-ray
+  name: AWS X-Ray
