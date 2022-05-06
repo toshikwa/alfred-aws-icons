@@ -1,4 +1,5 @@
 ---
+# service icons
 - id: acm
   name: AWS Certificate Manager
   short_name: ACM
@@ -219,9 +220,6 @@
 - id: ebs
   name: Amazon Elastic Block Store
   short_name: Amazon EBS
-
-- id: ec2-auto-scaling
-  name: Amazon EC2 Auto Scaling
 
 - id: ec2-image-builder
   name: EC2 Image Builder
@@ -758,3 +756,182 @@
 
 - id: x-ray
   name: AWS X-Ray
+
+# resource icons
+- id: alb
+  name: Application Load Balancer
+  short_name: ALB
+
+- id: api-gateway-endpoint
+  name: Endpoint
+  extra_search_terms:
+    - api gateway
+
+- id: cgw
+  name: Customer gateway
+
+- id: direct-connect-gateway
+  name: Direct Connect gateway
+
+- id: ebs-volume
+  name: Volume
+  extra_search_terms:
+    - ebs
+
+- id: ec2-ami
+  name: AMI
+  extra_search_terms:
+    - ec2
+
+- id: ec2-auto-scaling
+  name: Auto Scaling
+  extra_search_terms:
+    - ec2
+
+- id: ecs-container
+  name: Container
+  extra_search_terms:
+    - ecs
+
+- id: ecs-task
+  name: Task
+  extra_search_terms:
+    - ecs
+
+- id: eni
+  name: Elastic Network Interface
+  shot_name: ENI
+
+- id: glb
+  name: Gateway Load Balancer
+  short_name: GLB
+
+- id: glue-crawler
+  name: Crawler
+  extra_search_terms:
+    - glue
+
+- id: glue-data-catalog
+  name: Data Catalog
+  extra_search_terms:
+    - glue
+
+- id: igw
+  name: Internet Gateway
+
+- id: lambda-function
+  name: Function
+  extra_search_terms:
+    - lambda
+
+- id: msk-connect
+  name: MSK Connect
+  extra_search_terms:
+    - msk
+    - kafka
+
+- id: nat-gw
+  name: NAT Gateway
+
+- id: nlb
+  name: Network Load Balancer
+  extra_search_terms:
+    - nlb
+
+- id: route-table
+  name: Route table
+
+- id: s3-bucket
+  name: Bucket
+  extra_search_terms:
+    - s3
+
+- id: sqs-queue
+  name: Queue
+  extra_search_terms:
+    - sqs
+
+- id: vpn-connection
+  name: VPN connection
+
+- id: vpn-gateway
+  name: VPN Gateway
+
+# general icons
+- id: camera-dark
+  name: Camera (dark)
+
+- id: camera
+  name: Camera
+
+- id: client-dark
+  name: Client (dark)
+
+- id: client
+  name: Client
+
+- id: database-dark
+  name: Database (dark)
+
+- id: database
+  name: Database
+
+- id: disk-dark
+  name: Disk (dark)
+
+- id: disk
+  name: Disk
+
+- id: documents-dark
+  name: Documents (dark)
+
+- id: documents
+  name: Documents
+
+- id: email-dark
+  name: Email (dark)
+
+- id: email
+  name: Email
+
+- id: firewall-dark
+  name: Firewall (dark)
+
+- id: firewall
+  name: Firewall
+
+- id: gear-dark
+  name: Gear (dark)
+
+- id: gear
+  name: Gear
+
+- id: internet-dark
+  name: Internet (dark)
+
+- id: internet
+  name: Internet
+
+- id: mobile-client-dark
+  name: Mobile client (dark)
+
+- id: mobile-client
+  name: Mobile client
+
+- id: server-dark
+  name: Server (dark)
+
+- id: server
+  name: Server
+
+- id: user-dark
+  name: User (dark)
+
+- id: user
+  name: User
+
+- id: users-dark
+  name: Users (dark)
+
+- id: users
+  name: Users

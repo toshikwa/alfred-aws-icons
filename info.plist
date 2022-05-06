@@ -57,29 +57,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>D027371F-1044-43C0-8ABB-4CF38D717B9D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>8F203A19-469C-4E12-B92B-11B8C2D884E0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>5D917593-12E2-4F63-9CB6-692E98B1B6E5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Toshiki Watanabe</string>
@@ -91,55 +68,6 @@
 	<string>AWS Icons</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>1</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>6</integer>
-				<key>keyword</key>
-				<string>icon</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./alfred-aws-icons -query='{query}'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>e.g. ec2, s3, fargate ...</string>
-				<key>title</key>
-				<string>Search for an AWS Icon...</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D027371F-1044-43C0-8ABB-4CF38D717B9D</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -313,13 +241,6 @@ end alfred_script</string>
 			<integer>270</integer>
 			<key>ypos</key>
 			<integer>215</integer>
-		</dict>
-		<key>D027371F-1044-43C0-8ABB-4CF38D717B9D</key>
-		<dict>
-			<key>xpos</key>
-			<integer>65</integer>
-			<key>ypos</key>
-			<integer>185</integer>
 		</dict>
 		<key>D5A5D114-20D4-45AA-B4BE-562813413D8D</key>
 		<dict>

@@ -8,13 +8,15 @@ import (
 	"github.com/ku2482/alfred-aws-icons/workflow"
 )
 
-var wf *aw.Workflow
-var query string
-var yamlPath string
+var (
+	wf       *aw.Workflow
+	query    string
+	yamlPath string
+)
 
 func init() {
 	flag.StringVar(&query, "query", "", "query to use")
-	flag.StringVar(&yamlPath, "yaml_path", "services.yaml", "query to use")
+	flag.StringVar(&yamlPath, "yaml_path", "icons.yaml", "config file")
 	flag.Parse()
 	wf = aw.New()
 }

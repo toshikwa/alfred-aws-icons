@@ -9,7 +9,7 @@ import (
 )
 
 func TestImages(t *testing.T) {
-	awsServices := awsutil.ParseAwsServices("../services.yaml")
+	awsServices := awsutil.ParseAwsServices("../icons.yaml")
 	for _, awsService := range awsServices {
 		// PNG
 		image_path, err := filepath.Abs("../images/png/" + awsService.Id + ".png")
