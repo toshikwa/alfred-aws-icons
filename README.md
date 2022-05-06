@@ -2,7 +2,7 @@
 
 A Workflow for quickly pasting AWS architecture icons onto PowerPoint.
 
-![demo](https://user-images.githubusercontent.com/37267851/167145409-70714286-47a4-49bc-aa55-352e01189806.gif)
+![demo](https://user-images.githubusercontent.com/37267851/167146325-a5dfb581-06e2-4aca-a42a-683df9ae7625.gif)
 
 ## Installation
 
