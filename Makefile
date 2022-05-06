@@ -12,5 +12,5 @@ all: $(DIST_FILE)
 $(EXEC_BIN):
 	go build -o $(EXEC_BIN) .
 
-$(DIST_FILE): $(EXEC_BIN) $(PLIST) $(ICON) $(SERVICE) $(IMAGES)
-	zip -r $(DIST_FILE) $(PLIST) $(EXEC_BIN) $(YAML) $(SERVICE) $(IMAGES)
+$(DIST_FILE): $(EXEC_BIN) $(PLIST) $(ICON) $(YAML) $(IMAGES)
+	zip -r $(DIST_FILE) $(EXEC_BIN) $(PLIST) $(ICON) $(YAML) $(IMAGES)
