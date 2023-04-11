@@ -4,18 +4,14 @@ import (
 	"strings"
 
 	aw "github.com/deanishe/awgo"
-	"github.com/ku2482/alfred-aws-icons/awsutil"
 )
 
-func Run(wf *aw.Workflow, query string, yamlPath string) {
+func Run(wf *aw.Workflow, query string) {
 	if strings.Trim(query, " ") == "" {
 		handleEmptyQuery(wf)
 		return
 	}
 	defer finalize(wf)
-
-	awsServices := awsutil.ParseAwsServices(yamlPath)
-	awsutil.AddAwsServices(wf, awsServices)
 	wf.Filter(strings.ToLower(query))
 }
 
@@ -30,7 +26,7 @@ func finalize(wf *aw.Workflow) {
 	}
 	if wf.IsEmpty() {
 		wf.NewItem("No matching AWS Icon found.").
-			Subtitle("Try another query (e.g. `icon fargate`)").
+			Subtitle("Try another query (e.g. `ic fargate`)").
 			Icon(aw.IconNote)
 	}
 	wf.SendFeedback()

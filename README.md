@@ -17,4 +17,3 @@ Type `ic` (abbreviation for icon) in Alfred search window to trigger this workfl
 
 - type AWS service for which you want to use the icon. (e.g. `ic fargate`)
 - press <kbd>Enter</kbd> to paste the icon onto PowerPoint.
-- press <kbd>⌘</kbd>+<kbd>Enter</kbd> to paste the icon and its service name onto PowerPoint.

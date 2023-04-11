@@ -1,0 +1,108 @@
+---
+- name: Amazon Managed Streaming for Apache Kafka
+  abbreviation: Amazon MSK
+
+- name: Amazon Managed Workflows for Apache Airflow
+  abbreviation: MWAA
+
+- name: Amazon Simple Notification Service
+  abbreviation: Amazon SNS
+
+- name: Amazon Simple Queue Service
+  abbreviation: Amazon SQS
+
+- name: Amazon Quantum Ledger Database
+  abbreviation: Amazon QLDB
+
+- name: Amazon Simple Email Service
+  abbreviation: Amazon SES
+
+- name: Amazon Elastic Container Registry
+  abbreviation: Amazon ECR
+
+- name: Amazon Elastic Container Service
+  abbreviation: Amazon ECS
+
+- name: Amazon Elastic Kubernetes Service
+  abbreviation: Amazon EKS
+
+- name: Red Hat OpenShift Service on AWS
+  abbreviation: ROSA
+
+- name: AWS Database Migration Service
+  abbreviation: AWS DMS
+
+- name: AWS Distro for OpenTelemetry
+  abbreviation: ADOT
+
+- name: AWS Fault Injection Simulator
+  abbreviation: AWS FIS
+
+- name: AWS Personal Health Dashboard
+  abbreviation: AWS PHD
+
+- name: AWS Systems Manager
+  abbreviation: AWS SSM
+
+- name: Amazon Managed Grafana
+  abbreviation: AMG
+
+- name: Amazon Managed Service for Prometheus
+  abbreviation: AMP
+
+- name: Amazon Interactive Video Service
+  abbreviation: Amazon IVS
+
+- name: AWS Application Migration Service
+  abbreviation: AWS MGN
+
+- name: AWS Server Migration Service
+  abbreviation: AWS SMS
+
+- name: Amazon Virtual Private Cloud
+  abbreviation: Amazon VPC
+
+- name: Elastic Load Balancing
+  abbreviation: ELB
+
+- name: AWS Certificate Manager
+  abbreviation: AWS ACM
+
+- name: AWS Identity and Access Management
+  abbreviation: AWS IAM
+
+- name: AWS Identity Access Management
+  abbreviation: AWS IAM
+
+- mane: AWS Key Management Service
+  abbreviation: AWS KMS
+
+- name: AWS Private Certificate Authority
+  abbreviation: AWS Private CA
+
+- name: AWS Resource Access Manager
+  abbreviation: AWS RAM
+
+- name: Amazon Elastic File System
+  abbreviation: Amazon EFS
+
+- name: Amazon Elastic Block Store
+  abbreviation: Amazon EBS
+
+- name: Amazon FSx for Lustre
+  abbreviation: Amazon FSxL
+
+- name: Amazon FSx for NetApp ONTAP
+  abbreviation: Amazon FSxN
+
+- name: Amazon FSx for OpenZFS
+  abbreviation: Amazon FSxZ
+
+- name: Amazon FSx for WFS
+  abbreviation: Amazon FSxW
+
+- name: Amazon Simple Storage Service Glacier
+  abbreviation: Amazon S3 Glacier
+
+- name: Amazon Simple Storage Service
+  abbreviation: Amazon S3

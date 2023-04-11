@@ -22,9 +22,6 @@ jobs:
       - name: Download Go modules
         run: go mod download
 
-      - name: Test
-        run: go test ./tests
-
       - name: Build
         run: make
 

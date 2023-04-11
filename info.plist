@@ -20,29 +20,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>5D917593-12E2-4F63-9CB6-692E98B1B6E5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>5D917593-12E2-4F63-9CB6-692E98B1B6E5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>DD63C0DC-E7D3-4A5E-9AEA-B7F300711169</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>8F203A19-469C-4E12-B92B-11B8C2D884E0</key>
 		<array>
@@ -73,14 +50,7 @@
 			<dict>
 				<key>applescript</key>
 				<string>on alfred_script(q)
-	-- Parse query
-	set AppleScript's text item delimiters to {","}
-	set q to text items of q
-	set q1 to item 1 of q
-	set q2 to item 2 of q
-
-	-- Paste image
-	set the clipboard to (POSIX file q1)
+	set the clipboard to (POSIX file q)
 	tell application "System Events" to keystroke "v" using command down
 end alfred_script</string>
 				<key>cachescript</key>
@@ -90,25 +60,6 @@ end alfred_script</string>
 			<string>alfred.workflow.action.applescript</string>
 			<key>uid</key>
 			<string>D5A5D114-20D4-45AA-B4BE-562813413D8D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{var:action}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>run-script</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>8F203A19-469C-4E12-B92B-11B8C2D884E0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -148,7 +99,7 @@ end alfred_script</string>
 				<key>subtext</key>
 				<string>e.g. ec2, s3, fargate ...</string>
 				<key>title</key>
-				<string>Search for an AWS Icon...</string>
+				<string>Search for an AWS service icon...</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -164,42 +115,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>applescript</key>
-				<string>on alfred_script(q)
-	-- Parse query
-	set AppleScript's text item delimiters to {","}
-	set q to text items of q
-	set q1 to item 1 of q
-	set q2 to item 2 of q
-
-	-- Paste image
-	set the clipboard to (POSIX file q1)
-	tell application "System Events" to keystroke "v" using command down
-	delay 0.2
-
-	-- Set text to clipboard
-	set the clipboard to q2
-
-	tell application "System Events" to keystroke "v" using command down
-	tell application "System Events" to keystroke (key code 53)
-	tell application "System Events" to keystroke "e" using command down
-	repeat 16 times
-		tell application "System Events" to keystroke (key code 125)
-	end repeat
-end alfred_script</string>
-				<key>cachescript</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.applescript</string>
-			<key>uid</key>
-			<string>DD63C0DC-E7D3-4A5E-9AEA-B7F300711169</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>inputstring</key>
 				<string>{var:action}</string>
 				<key>matchcasesensitive</key>
@@ -207,12 +122,12 @@ end alfred_script</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>matchstring</key>
-				<string>run-script-cmd</string>
+				<string>run-script</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>5D917593-12E2-4F63-9CB6-692E98B1B6E5</string>
+			<string>8F203A19-469C-4E12-B92B-11B8C2D884E0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -224,43 +139,31 @@ end alfred_script</string>
 		<key>095F8CFA-1C36-4E65-AD30-EF70373C1FC5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>65</integer>
+			<real>85</real>
 			<key>ypos</key>
-			<integer>325</integer>
-		</dict>
-		<key>5D917593-12E2-4F63-9CB6-692E98B1B6E5</key>
-		<dict>
-			<key>xpos</key>
-			<integer>275</integer>
-			<key>ypos</key>
-			<integer>355</integer>
+			<real>255</real>
 		</dict>
 		<key>8F203A19-469C-4E12-B92B-11B8C2D884E0</key>
 		<dict>
 			<key>xpos</key>
-			<integer>270</integer>
+			<real>275</real>
 			<key>ypos</key>
-			<integer>215</integer>
+			<real>285</real>
 		</dict>
 		<key>D5A5D114-20D4-45AA-B4BE-562813413D8D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>405</integer>
+			<real>345</real>
 			<key>ypos</key>
-			<integer>185</integer>
-		</dict>
-		<key>DD63C0DC-E7D3-4A5E-9AEA-B7F300711169</key>
-		<dict>
-			<key>xpos</key>
-			<integer>405</integer>
-			<key>ypos</key>
-			<integer>325</integer>
+			<real>255</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.0.2</string>
+	<string>0.0.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/ku2482/alfred-aws-icons</string>
 </dict>
