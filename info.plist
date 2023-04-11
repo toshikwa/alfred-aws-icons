@@ -74,7 +74,7 @@
 				<key>escaping</key>
 				<integer>6</integer>
 				<key>keyword</key>
-				<string>sv</string>
+				<string>ics</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -92,7 +92,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>e.g. ec2, s3, fargate ...</string>
+				<string>e.g. `ics fargate`</string>
 				<key>title</key>
 				<string>Search for service icon</string>
 				<key>type</key>
@@ -160,7 +160,7 @@ end alfred_script</string>
 				<key>escaping</key>
 				<integer>6</integer>
 				<key>keyword</key>
-				<string>re</string>
+				<string>icr</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -178,7 +178,7 @@ end alfred_script</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>e.g. vpc endpoint, ecs task</string>
+				<string>e.g. `icr ecs task`</string>
 				<key>title</key>
 				<string>Search for resource icon...</string>
 				<key>type</key>

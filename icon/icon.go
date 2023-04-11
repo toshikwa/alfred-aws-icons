@@ -71,6 +71,10 @@ func LoadArchitectureIcons(
 		}
 		// png path
 		pngPath := strings.Replace(svgPath, svgSuffix, pngSuffix, 1)
+		svgPath, err := filepath.Abs(svgPath)
+		if err != nil {
+			log.Fatal(err.Error())
+		}
 
 		// filter match words
 		match = strings.ToLower(match)
@@ -126,10 +130,14 @@ func LoadResourceIcons(
 		match := name
 		if val, ok := abbrs[name]; ok {
 			abbr = val
-			match = abbr + " " + abbr + " " + abbr + " " + match
+			match = abbr + " " + match
 		}
 		// png path
 		pngPath := strings.Replace(svgPath, svgSuffix, pngSuffix, 1)
+		svgPath, err := filepath.Abs(svgPath)
+		if err != nil {
+			log.Fatal(err.Error())
+		}
 
 		// filter match words
 		match = strings.ToLower(match)

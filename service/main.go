@@ -19,7 +19,7 @@ func init() {
 	abbrs = icon.LoadAbbreviations("abbreviations.yaml")
 	icon.LoadArchitectureIcons(
 		svcwf,
-		"assets/Architecture-Service-Icons/Arch_*/*64",
+		"./assets/Architecture-Service-Icons/Arch_*/*64",
 		"Arch_",
 		"_64.svg",
 		"_64@5x.png",
