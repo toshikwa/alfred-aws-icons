@@ -1,7 +1,8 @@
 SHELL := /bin/bash
 
 PLIST=info.plist
-EXEC_BIN=alfred-aws-icons
+SVC_BIN=svc.alfred-aws-icons
+RES_BIN=res.alfred-aws-icons
 ICON=./icon.png
 YAML=./abbreviations.yaml
 ASSETS=./assets
@@ -9,8 +10,11 @@ DIST_FILE=aws-icons.alfredworkflow
 
 all: $(DIST_FILE)
 
-$(EXEC_BIN):
-	go build -o $(EXEC_BIN) .
+$(SVC_BIN):
+	go build -o $(SVC_BIN) ./service/main.go
 
-$(DIST_FILE): $(EXEC_BIN) $(PLIST) $(ICON) $(YAML) $(ASSETS)
-	zip -r $(DIST_FILE) $(EXEC_BIN) $(PLIST) $(ICON) $(YAML) $(ASSETS)
+$(RES_BIN):
+	go build -o $(RES_BIN) ./resource/main.go
+
+$(DIST_FILE): $(SVC_BIN) $(RES_BIN) $(PLIST) $(ICON) $(YAML) $(ASSETS)
+	zip -r $(DIST_FILE) $(SVC_BIN) $(RES_BIN) $(PLIST) $(ICON) $(YAML) $(ASSETS)

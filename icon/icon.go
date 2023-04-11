@@ -110,6 +110,7 @@ func LoadResourceIcons(
 		name = strings.Replace(name, prefix, "", 1)
 		name = strings.Replace(name, svgSuffix, "", 1)
 		name = strings.ReplaceAll(name, "-", " ")
+		name += " [" + info + "]"
 		abbr := name
 		if strings.Contains(name, "_") {
 			names := strings.Split(name, "_")

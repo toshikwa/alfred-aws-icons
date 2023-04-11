@@ -26,7 +26,7 @@ func finalize(wf *aw.Workflow) {
 	}
 	if wf.IsEmpty() {
 		wf.NewItem("No matching AWS Icon found.").
-			Subtitle("Try another query (e.g. `ic fargate`)").
+			Subtitle("Try another query (e.g. `ic svc fargate`, `ic res ecs task`)").
 			Icon(aw.IconNote)
 	}
 	wf.SendFeedback()

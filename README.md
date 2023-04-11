@@ -8,12 +8,10 @@ A Workflow for quickly pasting AWS architecture icons onto PowerPoint.
 
 Installation can be done as follows.
 
-- download the latest release of `aws-icons.alfredworkflow` from [here](https://github.com/ku2482/alfred-aws-icons/releases).
+- download the latest release of `aws-icons.alfredworkflow` from [here](https://github.com/toshikwa/alfred-aws-icons/releases).
 - open `aws-icons.alfredworkflow` and import it into Alfred.
 
 ## Usage
 
-Type `ic` (abbreviation for icon) in Alfred search window to trigger this workflow.
-
-- type AWS service for which you want to use the icon. (e.g. `ic fargate`)
-- press <kbd>Enter</kbd> to paste the icon onto PowerPoint.
+- type `sv [service name]` to search for AWS service icon. (e.g. `sv fargate`)
+- type `re [service name]` to search for AWS resource icon. (e.g. `re ecs task`)

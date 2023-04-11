@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>dev.unproductive.aws-icons</string>
+	<string>dev.toshikwa.aws-icons</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A05DF046-9B81-4C11-8B40-004A66C5A7A7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F203A19-469C-4E12-B92B-11B8C2D884E0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Toshiki Watanabe</string>
@@ -45,6 +58,55 @@
 	<string>AWS Icons</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>1</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>6</integer>
+				<key>keyword</key>
+				<string>sv</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./svc.alfred-aws-icons -query='{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>e.g. ec2, s3, fargate ...</string>
+				<key>title</key>
+				<string>Search for service icon</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>095F8CFA-1C36-4E65-AD30-EF70373C1FC5</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -66,55 +128,6 @@ end alfred_script</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>1</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>6</integer>
-				<key>keyword</key>
-				<string>ic</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./alfred-aws-icons -query='{query}'</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>e.g. ec2, s3, fargate ...</string>
-				<key>title</key>
-				<string>Search for an AWS service icon...</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>095F8CFA-1C36-4E65-AD30-EF70373C1FC5</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>inputstring</key>
 				<string>{var:action}</string>
 				<key>matchcasesensitive</key>
@@ -131,6 +144,55 @@ end alfred_script</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>1</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>6</integer>
+				<key>keyword</key>
+				<string>re</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./res.alfred-aws-icons -query='{query}'</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>e.g. vpc endpoint, ecs task</string>
+				<key>title</key>
+				<string>Search for resource icon...</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A05DF046-9B81-4C11-8B40-004A66C5A7A7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -139,9 +201,9 @@ end alfred_script</string>
 		<key>095F8CFA-1C36-4E65-AD30-EF70373C1FC5</key>
 		<dict>
 			<key>xpos</key>
-			<real>85</real>
+			<real>80</real>
 			<key>ypos</key>
-			<real>255</real>
+			<real>195</real>
 		</dict>
 		<key>8F203A19-469C-4E12-B92B-11B8C2D884E0</key>
 		<dict>
@@ -149,6 +211,13 @@ end alfred_script</string>
 			<real>275</real>
 			<key>ypos</key>
 			<real>285</real>
+		</dict>
+		<key>A05DF046-9B81-4C11-8B40-004A66C5A7A7</key>
+		<dict>
+			<key>xpos</key>
+			<real>80</real>
+			<key>ypos</key>
+			<real>335</real>
 		</dict>
 		<key>D5A5D114-20D4-45AA-B4BE-562813413D8D</key>
 		<dict>
@@ -165,6 +234,6 @@ end alfred_script</string>
 	<key>version</key>
 	<string>0.0.3</string>
 	<key>webaddress</key>
-	<string>https://github.com/ku2482/alfred-aws-icons</string>
+	<string>https://github.com/toshikwa/alfred-aws-icons</string>
 </dict>
 </plist>

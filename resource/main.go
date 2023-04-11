@@ -9,24 +9,16 @@ import (
 )
 
 var (
-	wf    *aw.Workflow
+	reswf *aw.Workflow
 	abbrs icon.Abbreviations
 	query string
 )
 
 func init() {
-	wf = aw.New()
+	reswf = aw.New()
 	abbrs = icon.LoadAbbreviations("abbreviations.yaml")
-	icon.LoadArchitectureIcons(
-		wf,
-		"assets/Architecture-Service-Icons/Arch_*/*64",
-		"Arch_",
-		"_64.svg",
-		"_64@5x.png",
-		abbrs,
-	)
 	icon.LoadResourceIcons(
-		wf,
+		reswf,
 		"assets/Resource-Icons/Res_*/Res_48_Light",
 		"Res_",
 		"_48_Light.svg",
@@ -35,7 +27,7 @@ func init() {
 		abbrs,
 	)
 	icon.LoadResourceIcons(
-		wf,
+		reswf,
 		"assets/Resource-Icons/Res_*/Res_48_Dark",
 		"Res_",
 		"_48_Dark.svg",
@@ -48,9 +40,9 @@ func init() {
 func run() {
 	flag.StringVar(&query, "query", "", "query to use")
 	flag.Parse()
-	workflow.Run(wf, query)
+	workflow.Run(reswf, query)
 }
 
 func main() {
-	wf.Run(run)
+	reswf.Run(run)
 }
