@@ -17,9 +17,21 @@ var (
 func init() {
 	reswf = aw.New()
 	abbrs = icon.LoadAbbreviations("abbreviations.yaml")
+
+	// service resource icons
 	icon.LoadResourceIcons(
 		reswf,
-		"./assets/Resource-Icons/Res_*/Res_48_Light",
+		"./assets/Resource-Icons/Res_*",
+		"Res_",
+		"_48.svg",
+		"_48.png",
+		"",
+		abbrs,
+	)
+	// General icons
+	icon.LoadResourceIcons(
+		reswf,
+		"./assets/Resource-Icons/Res_General-Icons/Res_48_Light",
 		"Res_",
 		"_48_Light.svg",
 		"_48_Light.png",
@@ -28,7 +40,7 @@ func init() {
 	)
 	icon.LoadResourceIcons(
 		reswf,
-		"./assets/Resource-Icons/Res_*/Res_48_Dark",
+		"./assets/Resource-Icons/Res_General-Icons/Res_48_Dark",
 		"Res_",
 		"_48_Dark.svg",
 		"_48_Dark.png",

@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Icon-Architecture/64/Arch_AWS-Application-Cost-Profiler_64</title>
-    <defs>
-        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
-            <stop stop-color="#1B660F" offset="0%"></stop>
-            <stop stop-color="#6CAE3E" offset="100%"></stop>
-        </linearGradient>
-    </defs>
     <g id="Icon-Architecture/64/Arch_AWS-Application-Cost-Profiler_64" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Rectangle" fill="url(#linearGradient-1)">
-            <rect x="0" y="0" width="80" height="80"></rect>
+        <g id="Icon-Architecture-BG/64/AWS-Cost-Management" fill="#7AA116">
+            <rect id="Rectangle" x="0" y="0" width="80" height="80"></rect>
         </g>
-        <g id="Icon-Service/64/AWS-Application-Cost-Profiler_64" transform="translate(8.000000, 8.000000)" fill="#FFFFFF">
-            <path d="M58,27 L60,27 L60,13 L58,13 L58,27 Z M49,27 L51,27 L51,4 L49,4 L49,27 Z M40,37 L42,37 L42,17 L40,17 L40,37 Z M31,42 L33,42 L33,10 L31,10 L31,42 Z M6.021,33 L12.997,33 C13.438,42.737 21.262,50.562 31,51.003 L31,57.978 C17.424,57.531 6.469,46.576 6.021,33 L6.021,33 Z M22,8.264 L22,16.009 C16.66,19.278 13.353,24.812 12.989,31 L6.136,31 C6.578,20.997 12.778,12.109 22,8.264 L22,8.264 Z M33,57.971 L33,50.989 C42.895,50.395 50.768,42.18 50.768,32.14 L48.768,32.14 C48.768,41.462 41.183,49.046 31.86,49.046 C22.538,49.046 14.953,41.462 14.953,32.14 C14.953,26.619 17.565,21.585 22,18.41 L22,32 L24,32 L24,5.394 L22.667,5.865 C11.557,9.792 4.093,20.351 4.093,32.14 L4,32.14 C4,47.502 16.498,60 31.86,60 C47.223,60 59.721,47.502 59.721,32.14 L57.721,32.14 C57.721,46.017 46.732,57.372 33,57.971 L33,57.971 Z" id="Fill-1"></path>
+        <g id="Icon-Service/64/AWS-Application-Cost-Profiler_64" transform="translate(12.000000, 12.000000)" fill="#FFFFFF">
+            <path d="M54,23 L56,23 L56,9 L54,9 L54,23 Z M45,23 L47,23 L47,0 L45,0 L45,23 Z M36,33 L38,33 L38,13 L36,13 L36,33 Z M27,38 L29,38 L29,6 L27,6 L27,38 Z M2.021,29 L8.997,29 C9.438,38.737 17.262,46.562 27,47.003 L27,53.978 C13.424,53.531 2.469,42.576 2.021,29 L2.021,29 Z M18,4.264 L18,12.009 C12.66,15.278 9.353,20.812 8.989,27 L2.136,27 C2.578,16.997 8.778,8.109 18,4.264 L18,4.264 Z M29,53.971 L29,46.989 C38.895,46.395 46.768,38.18 46.768,28.14 L44.768,28.14 C44.768,37.462 37.183,45.046 27.86,45.046 C18.538,45.046 10.953,37.462 10.953,28.14 C10.953,22.619 13.565,17.585 18,14.41 L18,28 L20,28 L20,1.394 L18.667,1.865 C7.557,5.792 0.093,16.351 0.093,28.14 L0,28.14 C0,43.502 12.498,56 27.86,56 C43.223,56 55.721,43.502 55.721,28.14 L53.721,28.14 C53.721,42.017 42.732,53.372 29,53.971 L29,53.971 Z" id="Fill-1"></path>
         </g>
     </g>
 </svg>

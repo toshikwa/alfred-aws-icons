@@ -178,7 +178,7 @@ end alfred_script</string>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>e.g. `ic res ecs task`</string>
+				<string>e.g. `icr ecs task`</string>
 				<key>title</key>
 				<string>Search for resource icon</string>
 				<key>type</key>
