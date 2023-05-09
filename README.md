@@ -13,5 +13,5 @@ Installation can be done as follows.
 
 ## Usage
 
-- type `ics [service name]` to search for AWS service icon. (e.g. `ics fargate`)
+- type `ic [service name]` to search for AWS service icon. (e.g. `ic fargate`)
 - type `icr [resource name]` to search for AWS resource icon. (e.g. `icr ecs task`)

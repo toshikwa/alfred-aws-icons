@@ -4,8 +4,8 @@ import (
 	"flag"
 
 	aw "github.com/deanishe/awgo"
-	"github.com/ku2482/alfred-aws-icons/icon"
-	"github.com/ku2482/alfred-aws-icons/workflow"
+	"github.com/toshikwa/alfred-aws-icons/icon"
+	"github.com/toshikwa/alfred-aws-icons/workflow"
 )
 
 var (

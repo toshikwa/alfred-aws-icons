@@ -1,4 +1,4 @@
-module github.com/ku2482/alfred-aws-icons
+module github.com/toshikwa/alfred-aws-icons
 
 go 1.17
 
