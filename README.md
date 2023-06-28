@@ -15,3 +15,9 @@ Installation can be done as follows.
 
 - type `ic [service name]` to search for AWS service icon. (e.g. `ic fargate`)
 - type `icr [resource name]` to search for AWS resource icon. (e.g. `icr ecs task`)
+
+> Note: You can resolve a message "alfred-aws-icons" cannot be opened because the developer cannot be verified as follows.
+>
+> - go to "System Preferences" > "Privacy & Security"
+> - click "Allow Anyway" to allow the binary to execute
+> - click "Open" when you use the tool for the first time
