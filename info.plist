@@ -86,7 +86,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./svc.alfred-aws-icons -query='{query}'</string>
+				<string>./alfred-aws-icons -mode=svc -query='{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -172,7 +172,7 @@ end alfred_script</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./res.alfred-aws-icons -query='{query}'</string>
+				<string>./alfred-aws-icons -mode=res -query='{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -232,7 +232,7 @@ end alfred_script</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.0.5</string>
+	<string>0.0.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/toshikwa/alfred-aws-icons</string>
 </dict>

@@ -17,7 +17,7 @@ func Run(wf *aw.Workflow, query string) {
 
 func handleEmptyQuery(wf *aw.Workflow) {
 	wf.NewItem("Search for an AWS Icon...").
-		Subtitle("e.g. ec2, s3, fargate ...")
+		Subtitle("e.g. `ic fargate`, `icr ecs task`")
 }
 
 func finalize(wf *aw.Workflow) {
