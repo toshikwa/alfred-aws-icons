@@ -33,7 +33,7 @@ func run() {
 			"./assets/Architecture-Service-Icons/Arch_*/*64",
 			"Arch_",
 			"_64.svg",
-			"_64@5x.png",
+			"_64.png",
 			abbrs,
 		)
 	} else if mode == "res" {
@@ -47,7 +47,7 @@ func run() {
 			"",
 			abbrs,
 		)
-		// General icons
+		// general icons
 		icon.LoadResourceIcons(
 			wf,
 			"./assets/Resource-Icons/Res_General-Icons/Res_48_Light",
@@ -64,6 +64,16 @@ func run() {
 			"_48_Dark.svg",
 			"_48_Dark.png",
 			"Dark",
+			abbrs,
+		)
+		// group icons
+		icon.LoadResourceIcons(
+			wf,
+			"./assets/Architecture-Group-Icons",
+			"",
+			"_32.svg",
+			"_32.png",
+			"",
 			abbrs,
 		)
 	}
