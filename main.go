@@ -30,7 +30,7 @@ func run() {
 		// service icons
 		icon.LoadArchitectureIcons(
 			wf,
-			"./assets/Architecture-Service-Icons/Arch_*/*64",
+			"./assets/Architecture-Service-Icons/Arch_*",
 			"Arch_",
 			"_64.svg",
 			"_64.png",
@@ -42,7 +42,7 @@ func run() {
 			wf,
 			"./assets/Resource-Icons/Res_*",
 			"Res_",
-			"_48.svg",
+			"_64.svg",
 			"_48.png",
 			"",
 			abbrs,
@@ -50,18 +50,18 @@ func run() {
 		// general icons
 		icon.LoadResourceIcons(
 			wf,
-			"./assets/Resource-Icons/Res_General-Icons/Res_48_Light",
+			"./assets/Resource-Icons/Res_General-Icons/Res_Light",
 			"Res_",
-			"_48_Light.svg",
+			"_64_Light.svg",
 			"_48_Light.png",
 			"Light",
 			abbrs,
 		)
 		icon.LoadResourceIcons(
 			wf,
-			"./assets/Resource-Icons/Res_General-Icons/Res_48_Dark",
+			"./assets/Resource-Icons/Res_General-Icons/Res_Dark",
 			"Res_",
-			"_48_Dark.svg",
+			"_64_Dark.svg",
 			"_48_Dark.png",
 			"Dark",
 			abbrs,
