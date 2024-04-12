@@ -2,22 +2,25 @@ package main
 
 import (
 	"flag"
+	"strings"
 
 	aw "github.com/deanishe/awgo"
+	"github.com/deanishe/awgo/update"
 	"github.com/toshikwa/alfred-aws-icons/icon"
-	"github.com/toshikwa/alfred-aws-icons/workflow"
 )
 
 var (
-	wf    *aw.Workflow
-	abbrs icon.Abbreviations
-	query string
-	mode  string
+	query      string
+	mode       string
+	abbrs      icon.Abbreviations
+	updateIcon *aw.Icon
+	wf         *aw.Workflow
 )
 
 func init() {
-	wf = aw.New()
 	abbrs = icon.LoadAbbreviations("abbreviations.yaml")
+	updateIcon = &aw.Icon{Value: "assets/update-available.png"}
+	wf = aw.New(update.GitHub("toshikwa/alfred-aws-icons"))
 }
 
 func run() {
@@ -30,7 +33,7 @@ func run() {
 		// service icons
 		icon.LoadArchitectureIcons(
 			wf,
-			"./assets/Architecture-Service-Icons/Arch_*",
+			"./assets/Architecture-Service-Icons/Arch_*/64",
 			"Arch_",
 			"_64.svg",
 			"_64.png",
@@ -50,7 +53,7 @@ func run() {
 		// general icons
 		icon.LoadResourceIcons(
 			wf,
-			"./assets/Resource-Icons/Res_General-Icons/Res_Light",
+			"./assets/Resource-Icons/Res_General-Icons/Res_48_Light",
 			"Res_",
 			"_64_Light.svg",
 			"_48_Light.png",
@@ -59,7 +62,7 @@ func run() {
 		)
 		icon.LoadResourceIcons(
 			wf,
-			"./assets/Resource-Icons/Res_General-Icons/Res_Dark",
+			"./assets/Resource-Icons/Res_General-Icons/Res_48_Dark",
 			"Res_",
 			"_64_Dark.svg",
 			"_48_Dark.png",
@@ -77,7 +80,35 @@ func run() {
 			abbrs,
 		)
 	}
-	workflow.Run(wf, query)
+
+	defer finalize(wf)
+	if strings.Trim(query, " ") == "" {
+		// show example query
+		wf.NewItem("Search for an AWS Icon...").Subtitle("e.g. `ic fargate`, `icr ecs task`")
+		// check for update
+		if wf.UpdateAvailable() {
+			wf.Configure(aw.SuppressUIDs(true))
+			wf.NewItem("An update is available!").
+				Subtitle("Press Enter to install update").
+				Valid(false).
+				Autocomplete("workflow:update").
+				Icon(updateIcon)
+		}
+	} else {
+		wf.Filter(strings.ToLower(query))
+	}
+}
+
+func finalize(wf *aw.Workflow) {
+	if r := recover(); r != nil {
+		panic(r)
+	}
+	if wf.IsEmpty() {
+		wf.NewItem("No matching AWS Icon found.").
+			Subtitle("Try another query (e.g. `ic fargate`, `icr ecs task`)").
+			Icon(aw.IconNote)
+	}
+	wf.SendFeedback()
 }
 
 func main() {
