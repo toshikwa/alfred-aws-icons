@@ -3,7 +3,6 @@ SHELL := /bin/bash
 PLIST=info.plist
 BIN=alfred-aws-icons
 ICON=./icon.png
-YAML=./abbreviations.yaml
 ASSETS=./assets
 DIST_FILE=aws-icons.alfredworkflow
 

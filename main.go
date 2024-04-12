@@ -2,6 +2,9 @@ package main
 
 import (
 	"flag"
+	"log"
+	"os"
+	"os/exec"
 	"strings"
 
 	aw "github.com/deanishe/awgo"
@@ -10,24 +13,62 @@ import (
 )
 
 var (
-	query      string
-	mode       string
-	abbrs      icon.Abbreviations
-	updateIcon *aw.Icon
-	wf         *aw.Workflow
+	doCheck           bool
+	query             string
+	mode              string
+	abbrs             = icon.LoadAbbreviations("assets/abbreviations.yaml")
+	updateIcon        = &aw.Icon{Value: "assets/update-available.png"}
+	repo              = "toshikwa/alfred-aws-icons"
+	checkForUpdateJob = "checkForUpdate"
+	wf                *aw.Workflow
 )
 
 func init() {
-	abbrs = icon.LoadAbbreviations("abbreviations.yaml")
-	updateIcon = &aw.Icon{Value: "assets/update-available.png"}
-	wf = aw.New(update.GitHub("toshikwa/alfred-aws-icons"))
+	flag.BoolVar(&doCheck, "check", false, "check for a new version")
+	flag.StringVar(&mode, "mode", "svc", "'svc' or 'res'")
+	wf = aw.New(update.GitHub(repo))
 }
 
 func run() {
-	// args
-	flag.StringVar(&mode, "mode", "svc", "'svc' or 'res'")
-	flag.StringVar(&query, "query", "", "query to use")
+	wf.Args()
 	flag.Parse()
+	if args := flag.Args(); len(args) > 0 {
+		query = args[0]
+	}
+	defer finalize()
+
+	// check for update
+	if doCheck {
+		wf.Configure(aw.TextErrors(true))
+		log.Println("Checking for updates...")
+		if err := wf.CheckForUpdate(); err != nil {
+			wf.FatalError(err)
+		}
+		return
+	}
+
+	// execute command to check
+	if wf.UpdateCheckDue() && !wf.IsRunning(checkForUpdateJob) {
+		log.Println("Running update check in background...")
+		cmd := exec.Command(os.Args[0], "-check")
+		if err := wf.RunInBackground(checkForUpdateJob, cmd); err != nil {
+			log.Printf("Error starting update check: %s", err)
+		}
+	}
+
+	// show update item
+	if query == "" {
+		if wf.UpdateAvailable() {
+			wf.Configure(aw.SuppressUIDs(true))
+			wf.NewItem("An update is available!").
+				Subtitle("Press Enter to install update").
+				Valid(false).
+				Autocomplete("workflow:update").
+				Icon(updateIcon)
+		} else {
+			wf.NewItem("Search for an AWS Icon...").Subtitle("e.g. `ic fargate`, `icr ecs task`")
+		}
+	}
 
 	if mode == "svc" {
 		// service icons
@@ -81,25 +122,13 @@ func run() {
 		)
 	}
 
-	defer finalize(wf)
-	if strings.Trim(query, " ") == "" {
-		// show example query
-		wf.NewItem("Search for an AWS Icon...").Subtitle("e.g. `ic fargate`, `icr ecs task`")
-		// check for update
-		if wf.UpdateAvailable() {
-			wf.Configure(aw.SuppressUIDs(true))
-			wf.NewItem("An update is available!").
-				Subtitle("Press Enter to install update").
-				Valid(false).
-				Autocomplete("workflow:update").
-				Icon(updateIcon)
-		}
-	} else {
+	// filter results
+	if query != "" {
 		wf.Filter(strings.ToLower(query))
 	}
 }
 
-func finalize(wf *aw.Workflow) {
+func finalize() {
 	if r := recover(); r != nil {
 		panic(r)
 	}
