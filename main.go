@@ -60,7 +60,7 @@ func run() {
 	if query == "" {
 		if wf.UpdateAvailable() {
 			wf.Configure(aw.SuppressUIDs(true))
-			wf.NewItem("An update is available!").
+			wf.NewItem("[alfred-aws-icons] An update is available!!").
 				Subtitle("Press Enter to install update").
 				Valid(false).
 				Autocomplete("workflow:update").
