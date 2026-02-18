@@ -8,6 +8,8 @@ on:
 jobs:
   release:
     runs-on: macos-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -17,32 +19,18 @@ jobs:
       - name: Setup Go env
         uses: actions/setup-go@v5
         with:
-          go-version: 1.22
+          go-version: "1.23"
+
+      - name: Install just
+        run: brew install just
 
       - name: Download Go modules
         run: go mod download
 
       - name: Build
-        run: make
+        run: just dist
 
       - name: Create release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          draft: false
-          prerelease: false
-
-      - name: Upload release asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./aws-icons.alfredworkflow
-          asset_name: aws-icons.alfredworkflow
-          asset_content_type: application/zip
+          files: ./aws-icons.alfredworkflow

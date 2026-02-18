@@ -1,6 +1,6 @@
 module github.com/toshikwa/alfred-aws-icons
 
-go 1.17
+go 1.23
 
 require (
 	github.com/deanishe/awgo v0.29.1

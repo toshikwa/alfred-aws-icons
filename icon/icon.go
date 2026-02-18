@@ -1,8 +1,8 @@
 package icon
 
 import (
-	"io/ioutil"
 	"log"
+	"os"
 	"path/filepath"
 	"strings"
 
@@ -17,7 +17,7 @@ type Abbreviation struct {
 type Abbreviations map[string]string
 
 func LoadAbbreviations(yamlPath string) Abbreviations {
-	yamlFile, err := ioutil.ReadFile(yamlPath)
+	yamlFile, err := os.ReadFile(yamlPath)
 	if err != nil {
 		log.Fatal(err)
 	}

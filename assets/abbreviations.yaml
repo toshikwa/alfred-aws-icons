@@ -11,9 +11,6 @@
 - name: Amazon Simple Queue Service
   abbreviation: Amazon SQS
 
-- name: Amazon Quantum Ledger Database
-  abbreviation: Amazon QLDB
-
 - name: Amazon Simple Email Service
   abbreviation: Amazon SES
 
@@ -35,10 +32,10 @@
 - name: AWS Distro for OpenTelemetry
   abbreviation: ADOT
 
-- name: AWS Fault Injection Simulator
+- name: AWS Fault Injection Service
   abbreviation: AWS FIS
 
-- name: AWS Personal Health Dashboard
+- name: AWS Health Dashboard
   abbreviation: AWS PHD
 
 - name: AWS Systems Manager
@@ -56,9 +53,6 @@
 - name: AWS Application Migration Service
   abbreviation: AWS MGN
 
-- name: AWS Server Migration Service
-  abbreviation: AWS SMS
-
 - name: Amazon Virtual Private Cloud
   abbreviation: Amazon VPC
 
@@ -74,7 +68,7 @@
 - name: AWS Identity Access Management
   abbreviation: AWS IAM
 
-- mane: AWS Key Management Service
+- name: AWS Key Management Service
   abbreviation: AWS KMS
 
 - name: AWS Private Certificate Authority
@@ -106,3 +100,6 @@
 
 - name: Amazon Simple Storage Service
   abbreviation: Amazon S3
+
+- name: AWS Cloud Development Kit
+  abbreviation: AWS CDK

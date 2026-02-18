@@ -17,13 +17,16 @@ jobs:
       - name: Setup Go env
         uses: actions/setup-go@v5
         with:
-          go-version: 1.22
+          go-version: "1.23"
+
+      - name: Install just
+        run: brew install just
 
       - name: Download Go modules
         run: go mod download
 
       - name: Build
-        run: make
+        run: just dist
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
